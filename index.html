@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jereiana ❤️</title>
+    <!-- Font Awesome -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <div class="app" id="app">
+
+        <!-- floating hearts -->
+        <div class="hearts-bg">
+            <span class="rainbow-heart">❤️</span>
+            <span class="rainbow-heart" style="animation-delay: 0.5s;">💕</span>
+            <span class="rainbow-heart" style="animation-delay: 1s;">💖</span>
+            <span class="rainbow-heart" style="animation-delay: 1.5s;">💗</span>
+            <span class="rainbow-heart" style="animation-delay: 2s;">💓</span>
+            <span class="rainbow-heart" style="animation-delay: 2.5s;">💝</span>
+            <span class="rainbow-heart" style="animation-delay: 3s;">💘</span>
+            <span class="rainbow-heart" style="animation-delay: 3.5s;">✨</span>
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- PAGE: LANDING                                             -->
+        <!-- ========================================================= -->
+        <div class="page active" id="page-landing">
+            <div class="landing">
+                <span class="big-heart rainbow-heart">❤️</span>
+                <div class="title-main typing-text">For you, Always</div>
+                <div class="title-sub fade-in-text">Happy 6th Years 😍</div>
+                <div class="fade-in-text" style="margin-top:8px; font-size:0.95rem; color:#e8c8d4;">
+                    A little word for just two of you.😊
+                </div>
+                <button class="btn-primary btn-sparkle btn-glow" id="btnExplore">
+                    Start Exploring <i class="fas fa-arrow-right"></i>
+                </button>
+                <div class="made-with">
+                    Six Years <i class="fas fa-heart"></i> Endless Love
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- PAGE: MAGIC WORD                                          -->
+        <!-- ========================================================= -->
+        <div class="page" id="page-magic">
+            <div class="magic-box">
+                <span class="lock-icon">🔐</span>
+                <div class="prompt">What's the magic word? 😉</div>
+                <div class="input-group">
+                    <input type="text" id="magicInput" placeholder="Type it here..." autocomplete="off" />
+                    <button class="btn-primary" id="magicBtn">
+                        Unlock <i class="fas fa-key"></i>
+                    </button>
+                    <div class="error-msg" id="magicError">❌ Hmm, that's not it. Try again!</div>
+                    <div class="hint">💡 Hint: it's a name you both know well</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- PAGE: MAIN APP                                            -->
+        <!-- ========================================================= -->
+        <div class="page" id="page-main">
+
+             <div class="main-header">
+                <h1>CELEBRATING</h1>
+                <div class="subhead">Six Years</div>
+                <div style="display:flex; justify-content:center; gap:16px; margin-top:6px; font-size:0.95rem;">
+                  <span>Jeremiah<span class="heart-icon">&❤️</span></span>
+                    <span style="color:#b8889a;">Mariana</span>
+                </div>
+            </div>
+
+            <div class="nav-tabs" id="navTabs">
+                <button class="nav-tab active" data-section="music">
+                    <i class="fas fa-music"></i> Music
+                </button>
+                <button class="nav-tab" data-section="gallery">
+                    <i class="fas fa-image"></i> Gallery
+                </button>
+                <button class="nav-tab" data-section="notes">
+                    <i class="fas fa-pen"></i> Notes
+                </button>
+            </div>
+
+            <div class="section-content">
+
+                <!-- MUSIC -->
+                <div class="section active" id="sec-music">
+                    <div class="music-list">
+                        <div class="music-item" data-song="Ruth">
+                            <div class="icon">🎵</div>
+                            <div class="info">
+                                <div class="title">Dandelions</div>
+                                <div class="artist">Ruth B.</div>
+                            </div>
+                            <button class="play-btn" data-song="Ruth">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="music-item" data-song="Billie">
+                            <div class="icon">🎵</div>
+                            <div class="info">
+                                <div class="title">Birds of a Feather</div>
+                                <div class="artist">Billie Eilish</div>
+                            </div>
+                            <button class="play-btn" data-song="Billie">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="music-item" data-song="CKay">
+                            <div class="icon">🎵</div>
+                            <div class="info">
+                                <div class="title">Emiliana</div>
+                                <div class="artist">CKay</div>
+                            </div>
+                           <button class="play-btn" data-song="CKay">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                        <div class="music-item" data-song="Crayon">
+                            <div class="icon">🎵</div>
+                            <div class="info">
+                                <div class="title">Ngozi</div>
+                                <div class="artist">Crayon</div>
+                            </div>
+                            <button class="play-btn" data-song="Crayon">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                       <div class="music-item" data-song="PostMalone">
+                            <div class="icon">🎵</div>
+                            <div class="info">
+                                <div class="title">Sunflower</div>
+                                <div class="artist">Post Malone</div>
+                            </div>
+                            <button class="play-btn" data-song="PostMalone">
+                                <i class="fas fa-play"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- lyrics display -->
+                    <div id="lyrics-container">
+                        <div id="lyrics-header" class="lyrics-header" style="display: none;">
+                            <span class="l-title" id="lyricsTitle">Song</span>
+                            <span class="l-artist" id="lyricsArtist">Artist</span>
+                        </div>
+                        <div id="lyrics-body" class="lyrics-body">
+                            <div class="lyrics-idle">🎵 Tap a song to see its lyrics...</div>
+                        </div>
+                    </div>
+
+                 <audio id="audio-Ruth" src="media/Ruth B. - Dandelions.mpeg.mp3"></audio>
+
+<audio id="audio-Billie" src="media/BIRDS OF A FEATHER - Billie Eilish.mpeg.mp3"></audio>
+
+<audio id="audio-CKay" src="media/CKay - Emiliana.mpeg.mp3"></audio>
+
+<audio id="audio-Crayon" src="media/Crayon-Ngozi-feat-Ayra-Starr.mp3"></audio>
+
+<audio id="audio-PostMalone" src="media/Post Malone, Swae Lee - Sunflower.mp3"></audio>
+                    <div style="margin-top:12px; text-align:center; font-size:0.75rem; color:#b8889a; opacity:0.5;">
+                        <i class="fas fa-headphones"></i> Tap a song to play
+                    </div>
+                </div>
+
+                <!-- GALLERY -->
+                <div class="section" id="sec-gallery">
+                    <div style="margin-bottom:6px; font-size:0.85rem; color:#e8c8d4; text-align:center;">
+                         Precious Moments Together
+                    </div>
+                    <div class="gallery-grid">
+                        <div class="gallery-item">
+                            <span class="emoji">
+                                <img src="media/tog.jpeg.jpg" alt="">
+                            </span>
+                            <div class="label">Looking sharp together</div>
+                            <div class="sub">✨</div>
+                        </div>
+                        
+                        <div class="gallery-item">
+                            <span class="emoji">
+                                <img src="media/ma.pmeg.jpg" alt="">
+                            </span>
+                            <div class="label">That cute face</div>
+                            <div class="sub">Love you Banister💕</div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <span class="emoji">
+                                <img src="media/jmoni.jpeg.jpg" alt="">
+                            </span>
+                            <div class="label">Us</div>
+                            <div class="sub">💖</div>
+                        </div>
+
+                         <div class="gallery-item">
+                            <span class="emoji">
+                                <img src="media/moni.jpeg.jpg" alt="">
+                            </span>
+                            <div class="label">Cute</div>
+                            <div class="sub">love you too Mariana ☺️</div>
+                        </div>
+                    </div>
+                    <div style="margin-top:14px; text-align:center; font-size:0.8rem; color:#b8889a; opacity:0.6;">
+                        <i class="fas fa-camera"></i> More memories loading...
+                    </div>
+                </div>
+
+                <!-- NOTES -->
+                <div class="section" id="sec-notes">
+                    <div style="margin-bottom:6px; font-size:0.85rem; color:#e8c8d4; text-align:center;">
+                     Words for the two of you
+                    </div>
+                    <div class="notes-list">
+                        <div class="note-item">
+                            <span class="note-icon">🎵</span>
+                            <span class="note-text">Six years in, and you still feel like my favorite decision.</span>
+                        </div>
+                        <div class="note-item">
+                            <span class="note-icon">🎵</span>
+                            <span class="note-text">Here's to the version of us that grows a little more, every single year.😊</span>
+                        </div>
+                        <div class="note-item">
+                            <span class="note-icon">🎵</span>
+                            <span class="note-text">Happy 6th Annivesary love</span>
+                        </div>
+                        <div class="note-item">
+                            <span class="note-icon">🎵</span>
+                            <span class="note-text">I'm proud of  us together 😊</span>
+                        </div>
+                    </div>
+
+                    <div class="letter-box">
+                         <p>
+                            My Baby, <br /><br />
+                            <strong>Six years ago,</strong> two hears chose each other and what a beautiful journey it has been.
+                            <br /><br />
+                            Through every laugh, every challenge, every late-night conversation, and every unforgettable memory <em> our love</em>, has  continued to grow stronger.
+                            <br /><br />
+                            You've shown that real love isn't about being perfect it's about choosing each other every single day, <em>even when life get difficult</em>. Six years of trust, patience support, and countless moment together is something truly worth celebrating.
+                            <br /><br />
+                            May this annivesary remind us of how far we have come and inspire each other <em>of our beautiful years still ahead</em>. Keep laughting together, dreaming together, and loving each other with the same passion that brought us this far.
+                            <br /><br />
+                            Wishing us both a lifetime fill with happiness, <em>peace adventure and endless love</em>.
+                            <br /><br />
+                            I'm so excited for what the next six years bring, and the six after that, and the six after that. Because as long as were together, every moment is a gift.
+                            <br /><br />
+                            <strong>Happy 6th Anniversary, Jereiana.</strong>
+                            <br /><br />
+                            Cheers to forever. <span class="heart-icon">❤️</span>
+                        </p>
+                        <div class="signoff">Yours always, <br /> Jereiana</div>
+                    </div>
+                </div>
+
+            </div>
+
+        <div class="bottom-bar">
+                <span><i class="fas fa-heart"></i> For Us Baby</span>
+                <span class="tag">@ JEREIANA</span>
+            </div>
+
+        </div>
+        <!-- end page-main -->
+
+    </div>
+    <!-- end app -->
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
