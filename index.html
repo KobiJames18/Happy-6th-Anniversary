@@ -9,6 +9,10 @@
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
     />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css" />
 </head>
@@ -16,30 +20,46 @@
 
     <div class="app" id="app">
 
-        <!-- floating hearts -->
+        <!-- floating petals -->
         <div class="hearts-bg">
-            <span class="rainbow-heart">❤️</span>
-            <span class="rainbow-heart" style="animation-delay: 0.5s;">💕</span>
-            <span class="rainbow-heart" style="animation-delay: 1s;">💖</span>
-            <span class="rainbow-heart" style="animation-delay: 1.5s;">💗</span>
-            <span class="rainbow-heart" style="animation-delay: 2s;">💓</span>
-            <span class="rainbow-heart" style="animation-delay: 2.5s;">💝</span>
-            <span class="rainbow-heart" style="animation-delay: 3s;">💘</span>
-            <span class="rainbow-heart" style="animation-delay: 3.5s;">✨</span>
+            <span class="petal">🌸</span>
+            <span class="petal" style="animation-delay: 1.2s;">🌸</span>
+            <span class="petal petal-heart" style="animation-delay: 0.6s;">💗</span>
+            <span class="petal" style="animation-delay: 2.1s;">🌸</span>
+            <span class="petal petal-heart" style="animation-delay: 3s;">💗</span>
+            <span class="petal" style="animation-delay: 1.7s;">🌸</span>
+            <span class="petal petal-heart" style="animation-delay: 2.6s;">💗</span>
+            <span class="petal" style="animation-delay: 0.3s;">✨</span>
+        </div>
+
+        <!-- ========================================================= -->
+        <!-- PAGE: WELCOME (the very first thing they see)             -->
+        <!-- ========================================================= -->
+        <div class="page active" id="page-welcome">
+            <div class="welcome">
+                <div class="seal" id="btnBegin">
+                    <div class="seal-ring">
+                        <span class="seal-monogram">J&nbsp;<i>&amp;</i>&nbsp;M</span>
+                    </div>
+                </div>
+                <div class="welcome-eyebrow">Sealed with love</div>
+                <div class="welcome-title">Welcome</div>
+                <div class="welcome-hint">tap the seal to open it</div>
+            </div>
         </div>
 
         <!-- ========================================================= -->
         <!-- PAGE: LANDING                                             -->
         <!-- ========================================================= -->
-        <div class="page active" id="page-landing">
+        <div class="page" id="page-landing">
             <div class="landing">
-                <span class="big-heart rainbow-heart">❤️</span>
+                <span class="big-heart">💗</span>
                 <div class="title-main typing-text">For you, Always</div>
                 <div class="title-sub fade-in-text">Happy 6th Years 😍</div>
-                <div class="fade-in-text" style="margin-top:8px; font-size:0.95rem; color:#e8c8d4;">
+                <div class="fade-in-text landing-note">
                     A little word for just two of you.😊
                 </div>
-                <button class="btn-primary btn-sparkle btn-glow" id="btnExplore">
+                <button class="btn-primary btn-glow" id="btnExplore">
                     Start Exploring <i class="fas fa-arrow-right"></i>
                 </button>
                 <div class="made-with">
@@ -53,7 +73,10 @@
         <!-- ========================================================= -->
         <div class="page" id="page-magic">
             <div class="magic-box">
-                <span class="lock-icon">🔐</span>
+                <div class="locket">
+                    <img src="media/tog.jpeg.jpg" alt="us" />
+                    <span class="locket-badge">💗</span>
+                </div>
                 <div class="prompt">What's the magic word? 😉</div>
                 <div class="input-group">
                     <input type="text" id="magicInput" placeholder="Type it here..." autocomplete="off" />

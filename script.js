@@ -14,7 +14,7 @@
                 top: ${Math.random() * 100}%;
                 width: ${Math.random() * 6 + 2}px;
                 height: ${Math.random() * 6 + 2}px;
-                background: ${['#ff6b9d', '#ff9ec4', '#ff5c8d', '#ffb3d1', '#ff7aa3'][Math.floor(Math.random() * 5)]};
+                background: ${['#b3596b', '#d4b483', '#b8925c', '#cf94a0', '#7d3346'][Math.floor(Math.random() * 5)]};
                 animation-delay: ${Math.random() * 4}s;
                 animation-duration: ${Math.random() * 3 + 3}s;
             `;
@@ -24,7 +24,7 @@
     
     // Create confetti explosion
     function createConfetti(x, y) {
-        const colors = ['#ff6b9d', '#ff9ec4', '#ff5c8d', '#ffb3d1', '#ff7aa3', '#ffc4dc', '#ff4a7d'];
+        const colors = ['#b3596b', '#d4b483', '#b8925c', '#cf94a0', '#7d3346', '#f4e7dc', '#ecdcda'];
         for (let i = 0; i < 30; i++) {
             const confetti = document.createElement('div');
             confetti.className = 'confetti';
@@ -42,13 +42,36 @@
         }
     }
     
+    // Little hearts burst from wherever you tap
+    function spawnTapHearts(x, y) {
+        const emojis = ['❤️', '💕', '💖', '🌹'];
+        const count = 3 + Math.floor(Math.random() * 2); // 3–4 hearts per tap
+        for (let i = 0; i < count; i++) {
+            const heart = document.createElement('span');
+            heart.className = 'tap-heart';
+            heart.textContent = emojis[Math.floor(Math.random() * emojis.length)];
+            const dx = (Math.random() - 0.5) * 70;
+            const rot = (Math.random() - 0.5) * 60;
+            heart.style.left = x + 'px';
+            heart.style.top = y + 'px';
+            heart.style.setProperty('--dx', dx + 'px');
+            heart.style.setProperty('--rot', rot + 'deg');
+            heart.style.fontSize = (0.9 + Math.random() * 0.6) + 'rem';
+            document.body.appendChild(heart);
+            setTimeout(() => heart.remove(), 1000);
+        }
+    }
+    document.addEventListener('click', (e) => spawnTapHearts(e.clientX, e.clientY));
+
     // Initialize particles
     createParticles();
 
     // ── DOM refs ──
+    const pageWelcome = document.getElementById('page-welcome');
     const pageLanding = document.getElementById('page-landing');
     const pageMagic = document.getElementById('page-magic');
     const pageMain = document.getElementById('page-main');
+    const btnBegin = document.getElementById('btnBegin');
     const btnExplore = document.getElementById('btnExplore');
     const magicInput = document.getElementById('magicInput');
     const magicBtn = document.getElementById('magicBtn');
@@ -92,16 +115,19 @@
     const lightboxImg = overlay.querySelector('.lightbox-image');
     const caption = overlay.querySelector('.lightbox-caption');
 
-    // Get all gallery items with images
-    const galleryItems = document.querySelectorAll('.gallery-item[data-image]');
+    // Get all gallery items that contain a photo
+    const galleryItems = document.querySelectorAll('.gallery-item');
 
     galleryItems.forEach(item => {
+        const img = item.querySelector('.emoji img');
+        if (!img) return; // emoji-only items (no photo) aren't clickable
+
         item.style.cursor = 'pointer';
         item.addEventListener('click', function(e) {
             // Don't trigger if clicking the play button or other interactive elements
             if (e.target.closest('.play-btn')) return;
 
-            const imgSrc = this.dataset.image;
+            const imgSrc = img.getAttribute('src');
             const label = this.querySelector('.label')?.textContent || 'Memory';
             
             lightboxImg.src = imgSrc;
@@ -305,12 +331,22 @@ I love you, don't act so surprised`,
     // ── state ──
     let currentPlaying = null;
     let currentAudio = null;
-    const MAGIC_WORD = 'james';
+    const MAGIC_WORD = 'Teddy';
 
     // ── page transitions ──
     function goToPage(pageId) {
         document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
         document.getElementById(pageId).classList.add('active');
+    }
+
+    // ── opening the seal on the welcome page ──
+    if (btnBegin) {
+        btnBegin.addEventListener('click', () => {
+            const rect = btnBegin.getBoundingClientRect();
+            createConfetti(rect.left + rect.width / 2, rect.top + rect.height / 2);
+            btnBegin.classList.add('opened');
+            setTimeout(() => goToPage('page-landing'), 420);
+        });
     }
 
     btnExplore.addEventListener('click', (e) => {
@@ -423,18 +459,8 @@ const audioMap = {
                 sections[key].classList.toggle('active', key === section);
             });
 
-            if (section !== 'music' && currentAudio) {
-                currentAudio.pause();
-                currentAudio.currentTime = 0;
-                const allBtns = document.querySelectorAll('.play-btn');
-                allBtns.forEach(b => {
-                    b.classList.remove('playing');
-                    b.innerHTML = '<i class="fas fa-play"></i>';
-                });
-                currentPlaying = null;
-                currentAudio = null;
-                resetLyrics();
-            }
+            // music keeps playing in the background when you browse
+            // other tabs — it only stops if you pause it yourself
         });
     });
 
@@ -530,4 +556,3 @@ const audioMap = {
     resetLyrics();
     console.log('❤️ For My Baby — full, complete lyrics loaded');
 })();
-
