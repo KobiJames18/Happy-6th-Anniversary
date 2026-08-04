@@ -246,86 +246,50 @@ I knew you in another life
 You had that same look in your eyes
 I love you, don't act so surprised`,
 
-         CKay: `Daseca, Gully God
-    We nah talk too much
+         CKay: `All because of you, I be on the phone, all night long, oh
+No be small thing wey you do to me, oh no, no, no
+I be on my business, shawty
+But you be on my mind, shawty
+Ebelebe oloma, my honey, ahh-ahh
 
-    Yeaah, ooh-ooh
-    Lady
-    La, la, la, la, la
-    Me, the gyal dem want
-    La, la, la, la, la
-    Sittin deh a mine
+[Pre-Chorus]
+Kiss me through the cellular, kiss me through the phone
+Can't you see I'm into ya?
+Can't you see I'm in love?
+Kiss me through the cellular, kiss me through the phone
+You're messin' with my medulla, highkey, I don kolo, oh no, no
 
-    Gyal, a me fi a take off your panty
-    No listen wha' your man say
-    And when you feel lonely
-    Go pon your phone, and phone me
-    So, me fi a take off your panty
-    No listen wha' your man say
-    And when you feel lonely
-    Man a come fi the sittin' weh you owe me
-    
-    Gyal, a me fi a-
-    Touch you some place your panty go
-    Make you reach some place you long fi go
-    Him buy house and car and land fi you
-    But him a pervert, me a the man fi you
-    She say, me deserve a bag of trophy
-    Woy, she love me like the US money
-    Woy, the gyal dem a rush after me
-    Woy, the gyal want a bruk off of-
+[Chorus]
+Emiliana, oh Emiliana, oh Emiliana, oh no
+Emiliana, oh Emiliana, oh Emiliana, oh no
+You're one in a million, oh, in a million, oh, in a million, oh no
+My Emiliana, oh Emiliana, oh Emiliana, oh no
 
-    Gyal, a me fi a take off your panty
-    No listen wha' your man say
-    And when you feel lonely
-    Go pon your phone, and phone me
-    So, me fi a take off your panty
-    No listen wha' your man say
-    And when you feel lonely
-    Man a come fi the sittin' weh you owe me, yeah
+[Instrumental Break]
+(CKay yo dey here, yeah)
 
-    The girls dem want me more and more
-    Dem never see a man like me before
-    All night working
-    Make the girls dem bawling out fi more
-    Touch dem hard, me touch dem pure
-    Inna dem house me nail up dem door
-    Give her the girthing
-    She a bawl say, "It hurting"
+[Verse 2]
+Girl, I wanna, wanna know what it feel like
+What it feel like
+Make I know as e bе for real life
+For real lifе
+Inna my condo
+Lovin' up your body, in fast and slow mo
+If I hit you with my combo
+Girl, you will never ever let me go, hold on to me, oh no-oh
 
-    After me take off the panty
-    No listen wha' your man say
-    And when you feel lonely
-    Go pon your phone, and phone me
-    So, me fi a take off your panty
-    No listen wha' your man say
-    And when you feel lonely
-    Man a come fi the sittin' weh you owe me
+[Pre-Chorus]
+Kiss me through the cellular, kiss me through the phone
+Can't you see I'm into ya? Can't you see I'm in love?
+Kiss me through the cellular, kiss me through the phone
+You're messin' with my medulla, highkey, I don kolo, oh no, no
 
-    La, la, la, la, la
-    La, la, la, la, la
-    La, la, la, la, la, la
-    La, la, la, la, la
-    La, la, la, la, la
-    La, la, la, la, la, la
+[Chorus]
+Emiliana, oh Emiliana, oh Emiliana, oh no
+Emiliana, oh Emiliana, oh Emiliana, oh no
+You're one in a million, oh, in a million, oh, in a million, oh no
+My Emiliana, oh Emiliana, oh Emiliana, oh no`
 
-    Gyal, a me fi a take off your panty
-    No listen wha' your man say
-    And when you feel lonely
-    Go pon your phone, and phone me
-    So, me fi a take off your panty
-    No listen wha' your man say
-    And when you feel lonely
-    Make me come fi the sittin' weh you owe me
-
-    Gyal, a me fi a take off your panty
-    No listen wha' your man say
-    And when you feel lonely
-    Go pon your phone, and phone me
-    So, me fi a take off your panty
-    No listen wha' your man say
-    And when you feel lonely
-    Make me come fi the sittin' weh you owe me`
     };
 
     // ── state ──
