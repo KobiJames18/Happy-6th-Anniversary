@@ -295,7 +295,7 @@ My Emiliana, oh Emiliana, oh Emiliana, oh no`
     // ── state ──
     let currentPlaying = null;
     let currentAudio = null;
-    const MAGIC_WORD = 'Teddy';
+    const MAGIC_WORD = 'Jereiana';
 
     // ── page transitions ──
     function goToPage(pageId) {
@@ -518,5 +518,5 @@ const audioMap = {
     });
 
     resetLyrics();
-    console.log('❤️ For My Baby — full, complete lyrics loaded');
+    console.log('❤️ For My Baby full, complete lyrics loaded');
 })();
